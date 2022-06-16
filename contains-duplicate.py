@@ -49,3 +49,15 @@ Sorting --> Time O(n log n) / Memory O(1)
             else:
                 hash_set.add(nums[i])
         return False
+      
+      
+      
+    simple solution
+    
+    class Solution:
+    def containsDuplicate(self, nums: List[int]) -> bool:
+        hash_set = set(nums)
+        aset=nums
+        if len(hash_set)<len(nums):
+            return True 
+        return False
