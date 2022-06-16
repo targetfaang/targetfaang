@@ -25,3 +25,14 @@ Sorting --> Time O(n log n) / Memory O(1)
       
   /*alternate* try using nums.sort() insead of sorted(nums) /
   
+  class Solution:
+    def containsDuplicate(self, nums: List[int]) -> bool:
+        hashset = set()
+        
+        for n in nums:
+            if n in hashset:
+                return True
+            hashset.add(n)
+        return False
+      
+   tc-o(n) sc-o(1)
