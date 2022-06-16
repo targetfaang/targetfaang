@@ -11,3 +11,17 @@ class Solution:
                 if nums[i]==nums[j]:
                     return True
         return False
+      
+      
+      
+Sorting --> Time O(n log n) / Memory O(1)
+ class Solution:
+    def containsDuplicate(self, nums: List[int]) -> bool:
+        nums=sorted(nums) 
+        for i in range(1,len(nums)):
+            if nums[i]==nums[i-1]:
+                    return True
+        return False
+      
+  /*alternate* try using nums.sort() insead of sorted(nums) /
+  
