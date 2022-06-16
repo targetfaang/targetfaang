@@ -1,6 +1,8 @@
 https://leetcode.com/problems/contains-duplicate/
 
-code : 
+code 1 brute force 
+Time complexity  : o(n2)
+Space complexity : o(1): 
   
 class Solution:
     def containsDuplicate(self, nums: List[int]) -> bool:
